@@ -1,60 +1,96 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #f4f4f4;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title data-i18n="name"></title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <div id="language-selector">
+            <button onclick="changeLanguage('es')">ES</button>
+            <button onclick="changeLanguage('en')">EN</button>
+        </div>
+        <h1 data-i18n="name"></h1>
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#sobre-mi" data-i18n="nav.about"></a>
+            <a href="#experiencia" data-i18n="nav.experience"></a>
+            <a href="#habilidades" data-i18n="nav.skills"></a>
+            <a href="#educacion" data-i18n="nav.education"></a>
+            <a href="#contacto" data-i18n="nav.contact"></a>
         </nav>
     </header>
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Esta es la sección de inicio de mi página web.</p>
+
+    <section id="sobre-mi">
+        <h2 data-i18n="sections.about.title"></h2>
+        <p data-i18n="sections.about.content"></p>
     </section>
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <p>Aquí puedes describir los servicios que ofreces.</p>
+
+    <section id="experiencia">
+        <h2 data-i18n="sections.experience.title"></h2>
+        <div id="experience-container" class="experience-container"></div>
     </section>
+
+    <section id="habilidades">
+        <h2 data-i18n="sections.skills.title"></h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3 data-i18n="sections.skills.technical.title"></h3>
+                <ul>
+                    <li data-i18n="sections.skills.technical.skill1"></li>
+                    <li data-i18n="sections.skills.technical.skill2"></li>
+                    <li data-i18n="sections.skills.technical.skill3"></li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3 data-i18n="sections.skills.soft.title"></h3>
+                <ul>
+                    <li data-i18n="sections.skills.soft.skill1"></li>
+                    <li data-i18n="sections.skills.soft.skill2"></li>
+                    <li data-i18n="sections.skills.soft.skill3"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2 data-i18n="sections.education.title"></h2>
+        <div class="education-container">
+            <article class="education-item">
+                <h3 data-i18n="sections.education.degree1.title"></h3>
+                <p class="institution" data-i18n="sections.education.degree1.institution"></p>
+                <p class="date" data-i18n="sections.education.degree1.date"></p>
+                <p class="description" data-i18n="sections.education.degree1.description"></p>
+            </article>
+            <!-- Puedes duplicar el article para más títulos -->
+        </div>
+    </section>
+
     <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Información de contacto o un formulario pueden ir aquí.</p>
+        <h2 data-i18n="sections.contact.title"></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="email-icon"></i> <span data-i18n="sections.contact.email"></span></p>
+                <p><i class="phone-icon"></i> <span data-i18n="sections.contact.phone"></span></p>
+                <p><i class="location-icon"></i> <span data-i18n="sections.contact.location"></span></p>
+            </div>
+            <div class="social-links">
+                <a href="#" data-i18n="sections.contact.linkedin" class="linkedin"></a>
+                <a href="#" data-i18n="sections.contact.github" class="github"></a>
+            </div>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p data-i18n="footer"></p>
     </footer>
+
+    <script src="lang/es.js"></script>
+    <!-- <script src="lang/en.js"></script> -->
+    <script src="js/language.js"></script>
 </body>
+
 </html>
