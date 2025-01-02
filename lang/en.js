@@ -1,64 +1,108 @@
-const es = {
-    title: "Mi Currículum",
+const en = {
+    title: "My Resume",
     name: "Andrés Martínez",
     nav: {
-        about: "Sobre Mí",
-        experience: "Experiencia",
-        skills: "Habilidades",
-        education: "Educación",
-        contact: "Contacto"
+        about: "About Me",
+        experience: "Experience",
+        skills: "Skills",
+        education: "Education",
+        contact: "Contact"
     },
     sections: {
         about: {
-            title: "Sobre Mí",
-            content: "Desarrollador android con más de 9 años de experiencia en el desarrollo de aplicaciones. Apasionado por las nuevas tecnologías y el aprendizaje continuo."
+            title: "About Me",
+            content: "Android developer with over 9 years of experience in app development. Passionate about new technologies and continuous learning."
         },
         experience: {
-            title: "Experiencia Profesional",
-            job1: {
-                title: "Desarrollador Full-Stack Senior",
-                company: "TechCorp Solutions",
-                date: "2020 - Presente",
-                description: "Desarrollo de aplicaciones web utilizando React, Node.js y MongoDB. Liderazgo de equipo de 5 desarrolladores."
-            },
-            job2: {
-                title: "Desarrollador Front-End",
-                company: "WebDev Inc.",
-                date: "2017 - 2020",
-                description: "Creación de interfaces de usuario interactivas y responsivas utilizando HTML, CSS y JavaScript."
-            }
+            title: "Professional Experience",
+            jobs: [
+                {
+                    title: "Senior Engineer, Mobile Developer",
+                    company: "NewDay",
+                    startDate: "2021-07",
+                    endDate: "actual",
+                    description: "Design, build, and deliver top-tier Android applications.",
+                    tools: ["Android Studio", "Kotlin", "Github"]
+                },
+                {
+                    title: "Mobile Developer",
+                    company: "NewDay",
+                    startDate: "2019-06",
+                    endDate: "2021-07",
+                    description: "Migration of Java applications to Kotlin.",
+                    tools: ["Android Studio", "Kotlin", "Java"]
+                },
+                {
+                    title: "Android Developer",
+                    company: "ROKI group limited",
+                    startDate: "2018-05",
+                    endDate: "2019-06",
+                    description: "Contract Android developer for various projects.",
+                    tools: ["Android Studio", "Java", "Jira"]
+                },
+                {
+                    title: "Android Developer",
+                    company: "WeSwap.com",
+                    startDate: "2018-05",
+                    endDate: "2019-06",
+                    description: "Worked on the app for currency exchange between users worldwide.",
+                    tools: ["Java", "Google Pay", "Stripe", "Github", "Jira", "Firebase"]
+                },
+                {
+                    title: "Software Developer",
+                    company: "Emirates",
+                    startDate: "2016-11",
+                    endDate: "2017-12",
+                    description: "Developed new features for the airline app, focusing on the VIP lounge.",
+                    tools: ["Android Studio", "Java", "Jira", "HTML", "CSS"]
+                },
+                {
+                    title: "Junior Android Developer - Internship",
+                    company: "Overant SL.",
+                    startDate: "2016-03",
+                    endDate: "2016-06",
+                    description: "Created a POS for restaurants on Android.",
+                    tools: ["Android Studio", "Java", "PHP", "RESTful", "Git", "MySQL"]
+                },
+                {
+                    title: "Junior Developer - Internship",
+                    company: "Malvern House",
+                    startDate: "2013-03",
+                    endDate: "2013-06",
+                    description: "Managed the school's teacher and computer system.",
+                    tools: ["Windows Server", "Spiceworks"]
+                },
+            ]
         },
         skills: {
-            title: "Habilidades",
-            technical: {
-                title: "Habilidades Técnicas",
-                skill1: "JavaScript",
-                skill2: "React",
-                skill3: "Node.js"
-            },
-            soft: {
-                title: "Habilidades Blandas",
-                skill1: "Trabajo en equipo",
-                skill2: "Comunicación",
-                skill3: "Resolución de problemas"
-            }
+            title: "Languages",
+            languages: [
+                {
+                    language: "Spanish",
+                    level: "Native"
+                },
+                {
+                    language: "English",
+                    level: "Advanced"
+                }
+            ]
         },
         education: {
-            title: "Educación",
-            degree1: {
-                title: "Licenciatura en Ingeniería Informática",
-                institution: "Universidad de la Tecnología",
-                date: "2013 - 2017",
-                description: "Estudios enfocados en el desarrollo de software y sistemas informáticos."
-            }
-        },
-        contact: {
-            title: "Contacto",
-            email: "juan.perez@example.com",
-            phone: "+34 123 456 789",
-            location: "Madrid, España",
-            linkedin: "LinkedIn",
-            github: "GitHub"
+            title: "Education",
+            degrees: [
+                {
+                    title: "Multiplatform Application Developer",
+                    institution: "CIP de Batoi - Alicante, Spain",
+                    startDate: "2013-09",
+                    endDate: "2016-03"
+                },
+                {
+                    title: "Network Systems Administrator",
+                    institution: "IES Marcos Zaragoza - Alicante, Spain",
+                    startDate: "2010-09",
+                    endDate: "2013-03"
+                },
+            ]
         }
     },
     footer: "© 2024 Andrés Martínez"
