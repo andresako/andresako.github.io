@@ -1,6 +1,6 @@
 const en = {
-    title: "My Resume",
-    name: "Andrés Martínez",
+    title: "Andrés Martínez",
+    name: "Andrés Martínez Megía",
     nav: {
         about: "About Me",
         experience: "Experience",

@@ -95,7 +95,8 @@ const es = {
                     institution: "CIP de Batoi - Alicante, España",
                     startDate: "2013-09",
                     endDate: "2016-03"
-                }, {
+                },
+                {
                     title: "Administrador de Sistemas Informáticos en Red",
                     institution: "IES Marcos Zaragoza - Alicante, España",
                     startDate: "2010-09",
